@@ -234,8 +234,13 @@ nav .log-btn{
 }
 @media screen and (min-width : 320px) and (max-width : 480px) {
     .carousel-item img {
-        height: 250px;
+        height: 200px;
+        margin-top: 20px;
         width: 100%;
+    }
+    .carousel-indicators li{
+        background-color: red !important;
+        margin-top: 50px;
     }
     footer .copy-right ul{
         display: flex;
@@ -255,15 +260,11 @@ nav .log-btn{
         width: 100%;
         opacity: .5;
     }
-    .skills .skills-content img {
-        width: 40%;
-        height: 50px;
-    }
-    .skills .skills-content h2 {
-        font-size: 13px;
+    .skills-content1 h2 {
+        text-align: center;
     }
     .phone-logo{
-        width: 20%;
+        width: 27%;
         height: 40px;
         margin-right: auto;
     }
@@ -282,6 +283,26 @@ nav .log-btn{
     }
     .footer-logo-image{
         display: none;
+    }
+    .web-carousel-mode{
+        display: none;
+    }
+    .carousel-indicators{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 35px;
+        z-index: 15;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
+        /* margin-top: 10%; */
+        top: 80%;
     }
 }
 
@@ -350,6 +371,9 @@ nav .log-btn{
         width: 100%;
         height: 80px;
     }
+    .phone-carousel-mode{
+        display: none;
+    }
 }
 
 /* tablet col-sm*/
@@ -364,6 +388,9 @@ nav .log-btn{
     }
     footer .copy-right p{
         justify-content: center;
+    }
+    .phone-carousel-mode{
+        display: none;
     }
 }
 
@@ -381,6 +408,9 @@ nav .log-btn{
         width: 7%;
         height: 50px;
     }
+    .phone-carousel-mode{
+        display: none;
+    }
 }
 
 /* large device col-lg*/
@@ -393,8 +423,11 @@ nav .log-btn{
         display: flex;
         justify-content: flex-end;
     }
-    .web-logo{
-        width: 7%;
-        height: 50px;
+    .web-logo{   
+        height: 60px;
+        width: 8%;
+    }
+    .phone-carousel-mode{
+        display: none;
     }
 }
